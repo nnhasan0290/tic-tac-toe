@@ -3,15 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tic Tac Toe</title>
   </head>
   <body>
-    <div id="app">
-      <h1>Tic Tac Toe</h1>
-      <div class="board"></div>
-      <button>Start Again</button>
+    <div id="main" class="board">
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+    </div>
+    <div class="winning-message" id="winning-message">
+      <div data-winning-message-text></div>
+      <div class="restart-button" id="restart-button">Restart</div>
     </div>
     <script type="module" src="/main.js"></script>
   </body>
